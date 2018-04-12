@@ -133,10 +133,6 @@ module.exports = function (grunt) {
                 options: {
                     patterns: [
                         {
-                            match: 'version',
-                            replacement: pkg.version
-                        },
-                        {
                             match: /material-theme<\/artifactId>\s+<version>[^>]*<\/version>/g,
                             replacement: 'material-theme</artifactId>\n    <version>' + pkg.version + '</version>'
                         }
