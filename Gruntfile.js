@@ -23,7 +23,8 @@ module.exports = function (grunt) {
         'brown': '#795548',
         'grey': '#757575',
         'blue-grey': '#607D8B',
-        'fuel': '#002d5b'
+        'fuel': '#002d5b',
+        'black': '#000000'
     };
 
     var fileCreatorTask = {};
@@ -138,10 +139,6 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     patterns: [
-                        {
-                            match: 'version',
-                            replacement: pkg.version
-                        },
                         {
                             match: /material-theme<\/artifactId>\s+<version>[^>]*<\/version>/g,
                             replacement: 'material-theme</artifactId>\n    <version>' + pkg.version + '</version>'
