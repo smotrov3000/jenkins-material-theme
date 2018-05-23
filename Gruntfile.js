@@ -9,6 +9,7 @@ module.exports = function (grunt) {
         'purple': '#9C27B0',
         'deep-purple': '#673AB7',
         'indigo': '#3F51B5',
+        'indigo-900': '#1A237E',
         'blue': '#2196F3',
         'light-blue': '#039BE5',
         'cyan': '#0097A7',
